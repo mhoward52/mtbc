@@ -1,10 +1,17 @@
 <?php
 
 echo "Hey Young World";
-$msg = 'Hi Mr. World'
+
+//Note the escape character before the dollar sign
+$name = 'Bob Smith';
+$greeting = "Hello {$name}";
+$count=5;
+$price=6;
+$total=($count*$price);
+$msg = "I see you have {$count} oranges, that will be \${$total}";
+
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,7 +20,7 @@ $msg = 'Hi Mr. World'
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-       <h1> <?php echo 'Hello World'; ?> </h1>
+       <h1> <?php echo $greeting; ?> </h1>
        <h2> <?php echo $msg; ?> </h2>
     </body>
 </html>
